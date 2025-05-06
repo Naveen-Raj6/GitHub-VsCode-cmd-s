@@ -1,0 +1,44 @@
+
+
+🔹 Git Command: 
+git fetch
+
+
+🔹 Description:
+The git fetch command is used to retrieve updates from a remote repository without merging them into your local branch. 
+It fetches all the changes, such as new branches, commits, and tags, but does not modify your working directory or staging area. 
+It allows you to see what changes are available in the remote repository before deciding to merge or rebase them into your local branch.
+
+
+🔹 Options:
+<remote> :-Specifies the remote repository to fetch from (usually origin).
+--all :-Fetches updates from all remotes configured in the repository.
+--tags :-Fetches tags from the remote repository.
+--prune :-Removes remote-tracking references that no longer exist on the remote.
+--dry-run :-Simulates the fetch operation without actually fetching any data, allowing you to see what would happen.
+--depth <depth> :-Fetches a shallow copy of the repository with the specified depth, limiting the number of commits fetched.
+
+
+🔹 Example:
+git fetch origin
+Fetches changes from the origin remote repository but does not merge them into your local branch.
+
+🔹 Example:
+git fetch --all
+Fetches updates from all remotes configured for the repository.
+
+🔹 Example:
+git fetch --tags
+Fetches all tags from the remote repository.
+
+🔹 Example:
+git fetch --prune
+Cleans up remote-tracking branches that no longer exist on the remote repository.
+
+🔹 Syntax:
+git fetch [<remote>] [<refspec>] [options]
+
+* remote is typically origin, but can be any remote repository.
+* refspec specifies what to fetch (e.g., branches or tags).
+* Options like --all, --tags, and --prune control the fetch behavior.
+
