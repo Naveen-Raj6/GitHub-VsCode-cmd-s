@@ -1,0 +1,63 @@
+
+
+🔹 Git Command: 
+git cherry-pick
+
+
+🔹 Description:
+The git cherry-pick command is used to apply a specific commit from another branch to the current branch. 
+It allows you to pick individual commits instead of merging an entire branch, making it useful for applying bug fixes or feature changes selectively.
+
+This command is especially helpful when:
+
+* You want to bring a commit from one branch into another without merging all the changes.
+* You need to pick a commit from a branch that’s not directly related to the current branch.
+
+
+🔹 Options:
+<commit> :-Specifies the commit to cherry-pick (you can specify a commit hash or range).
+-x :-Includes a reference to the original commit in the commit message (e.g., "cherry-picked from commit ...").
+--continue :-Continues a cherry-pick after resolving conflicts.
+--abort :-Aborts the cherry-pick operation and restores the repository to the state before the cherry-pick started.
+--edit :-Opens an editor to modify the commit message before completing the cherry-pick.
+--no-commit :-Applies the changes without committing them, allowing you to make further changes before committing.
+--strategy=<strategy> :-Specifies a merge strategy to use during cherry-picking (e.g., recursive, ours).
+
+
+🔹 Example:
+git cherry-pick a1b2c3d
+Applies the commit a1b2c3d from another branch to the current branch.
+
+🔹 Example:
+git cherry-pick -x a1b2c3d
+Applies the commit a1b2c3d and includes the original commit hash in the message.
+
+🔹 Example:
+git cherry-pick --continue
+Continues the cherry-pick process after resolving conflicts.
+
+🔹 Example:
+git cherry-pick --abort
+Aborts the cherry-pick operation, discarding the changes.
+
+🔹 Example:
+git cherry-pick --no-commit a1b2c3d
+Applies the commit but does not automatically commit it, giving you the chance to make further changes before committing.
+
+🔹 Syntax:
+git cherry-pick <commit>
+
+🔹 Syntax:
+git cherry-pick -x <commit>
+
+🔹 Syntax:
+git cherry-pick --continue
+
+🔹 Syntax:
+git cherry-pick --abort
+
+🔹 Syntax:
+git cherry-pick --no-commit <commit>
+
+🔹 Syntax:
+git cherry-pick --strategy=<strategy> <commit>
