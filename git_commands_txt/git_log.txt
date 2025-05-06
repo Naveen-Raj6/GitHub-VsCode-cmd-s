@@ -1,0 +1,57 @@
+
+
+🔹 Git Command: git log
+🔹 Description:
+The git log command shows the commit history of the current Git repository. It displays a list of all commits in reverse chronological order, including:
+
+Commit hash
+
+Author name and email
+
+Commit date
+
+Commit message
+
+This is useful for reviewing changes, tracking project progress, or debugging.
+
+🔹 Options:
+Option	Description
+--oneline :-Shows each commit in a single line (abbreviated hash + message).
+--graph :-Displays an ASCII graph of the branch/merge history.
+--decorate :-Adds branch and tag names next to commits.
+--all :-Shows logs from all branches.
+-n <number> or --max-count=<number> :-Limits the number of commits shown. Example: git log -n 5
+--author="name" :-Filters commits by author.
+--since="date" and --until="date" :-Shows commits in a date range.
+-p :-Shows the diff introduced in each commit.
+--stat :-Shows a summary of changes (number of insertions/deletions per file).
+
+🔹 Example:
+git log
+
+Output:
+commit d6f9a8e7d9bc144da1e98e3b84c07de7c98734f1
+Author: Roronoa Zoro <zorosword@asta.dev>
+Date:   Mon May 6 10:00:00 2025 +0530
+
+Added new anime card for Asta
+
+
+🔹 Example:
+git log --oneline --graph --decorate
+
+Output:
+* d6f9a8e (HEAD -> main) Added new anime card for Asta
+* b8f7e2a Initial project setup
+
+
+🔹 Example:
+git log --author="Roronoa" --since="2 weeks ago"
+
+Shows commits by author Roronoa in the last 2 weeks.
+
+🔹 Syntax:
+git log [options] [<revision range>] [--] [<path>...]
+
+* Without any options, it shows full commit details.
+* With filters and formatting options, it becomes a powerful inspection tool.
