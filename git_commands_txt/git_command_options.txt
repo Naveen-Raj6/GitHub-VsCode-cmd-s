@@ -1,0 +1,67 @@
+
+
+🔹 Git Command Options (Details)
+
+-m
+Description: Provide a commit message
+Example Command: git commit -m "message"
+
+-d
+Description: Delete a branch
+Example Command: git branch -d feature-branch
+
+-v
+Description: Show detailed/verbose info
+Example Command: git remote -v
+
+--oneline
+Description: Show log in short format (one line per commit)
+Example Command: git log --oneline
+
+--global
+Description: Apply configuration globally (all repos for current user)
+Example Command: git config --global user.name "Naveen"
+
+--hard
+Description: Force reset working directory and index to match commit
+Example Command: git reset --hard HEAD
+
+-i
+Description: Enable interactive mode
+Example Command: git rebase -i HEAD~3
+
+-u
+Description: Set upstream branch
+Example Command: git push -u origin main
+
+--format
+Description: Define output format (e.g., for archive)
+Example Command: git archive --format=zip HEAD > code.zip
+
+--tags
+Description: Include tags
+Example Command: git describe --tags
+
+--all
+Description: Show all branches (local and remote)
+Example Command: git branch --all
+
+--force
+Description: Force a Git action (e.g., push, clean)
+Example Command: git push --force
+
+-r
+Description: Show remote branches
+Example Command: git branch -r
+
+--cached
+Description: Remove file from index only, not from working directory
+Example Command: git rm --cached file.txt
+
+--soft
+Description: Move HEAD only (keep working directory and index)
+Example Command: git reset --soft HEAD~1
+
+--keep
+Description: Keep local changes during reset
+Example Command: git reset --keep HEAD~1
