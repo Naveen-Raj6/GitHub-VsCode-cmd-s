@@ -1,0 +1,78 @@
+
+
+🔹 Git Command: 
+git stash
+
+🔹 Description:
+The git stash command is used to temporarily save (stash) your uncommitted changes (both staged and unstaged) without committing them.
+It lets you switch branches or pull changes without losing your current work.
+
+You can apply, pop, list, or drop your stashes later.
+
+It’s very helpful when you need to:
+
+* Switch branches quickly
+* Pull latest changes before committing
+* Pause your current work temporarily
+
+
+🔹 Options:
+push :-(default) Saves your changes into a new stash entry.
+-m "msg" :-Adds a message to describe the stash.
+pop :-Applies the most recent stash and removes it from the stash list.
+apply :-Applies the most recent stash without removing it.
+list :-Shows all stash entries.
+show :-Shows the changes stored in the latest stash.
+drop :-Deletes a specific stash entry.
+clear :-Deletes all stash entries.
+stash@{n} :-Refers to a specific stash (e.g., stash@{0} is the latest).
+
+🔹 Example:
+git stash
+Stashes your uncommitted changes (tracked files only).
+
+🔹 Example:
+git stash push -m "WIP: homepage layout"
+Stashes changes with a custom message.
+
+🔹 Example:
+git stash list
+Displays all saved stashes.
+
+🔹 Example:
+git stash apply
+Applies the most recent stash without removing it.
+
+🔹 Example:
+git stash pop
+Applies and removes the most recent stash.
+
+🔹 Example:
+git stash drop stash@{1}
+Deletes a specific stash.
+
+🔹 Example:
+git stash clear
+Removes all stashes.
+
+
+🔹 Syntax:
+git stash [push] [-m "message"]
+
+🔹 Syntax:
+git stash list
+
+🔹 Syntax:
+git stash show [stash@{n}]
+
+🔹 Syntax:
+git stash apply [stash@{n}]
+
+🔹 Syntax:
+git stash pop [stash@{n}]
+
+🔹 Syntax:
+git stash drop [stash@{n}]
+
+🔹 Syntax:
+git stash clear
