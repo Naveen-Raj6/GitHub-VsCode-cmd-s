@@ -1,0 +1,41 @@
+
+
+🔹 Git Command: 
+git init
+
+🔹 Description:
+The git init command initializes a new Git repository in your current project folder.
+It creates a hidden .git/ directory that stores all the metadata, history, and 
+configuration for version control. After running this command, your project becomes
+ a Git-tracked repository, and you can start using other Git commands like add, commit, and push.
+
+
+🔹 Options:
+--bare :- Creates a bare repository without a working directory (used mainly on servers).
+
+--separate-git-dir=<path> :- Stores the actual .git directory elsewhere while keeping the working tree clean.
+
+-q, --quiet	:- Suppresses standard output messages during initialization.
+
+
+🔹 Example:
+bash
+Copy
+Edit
+mkdir AstaRepo
+cd AstaRepo
+git init
+
+
+🔹 Output:
+bash
+Copy
+Edit
+Initialized empty Git repository in /path/to/AstaRepo/.git/
+
+
+🔹 Syntax:
+git init [--bare] [--quiet] [--separate-git-dir=<path>] [directory]
+
+* If directory is provided, Git initializes the repo in that folder.
+* If no directory is specified, the repo is initialized in the current folder.
