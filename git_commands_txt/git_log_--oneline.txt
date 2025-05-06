@@ -1,0 +1,58 @@
+
+
+🔹 Git Command: 
+git log --oneline
+
+
+🔹 Description:
+The git log --oneline command is used to display the commit history in a simplified format, 
+showing each commit on a single line. It shows the commit hash (shortened) and the commit message, 
+making it easy to get a quick overview of the commit history without extra details like dates, authors, or diffs.
+
+This command is especially helpful when you want a concise view of the commit history, ideal for navigating through a large history of commits quickly.
+
+
+🔹 Options:
+--oneline :-Displays the commit history in a simplified, single-line format.
+-n <number> :-Limits the number of commits displayed (e.g., -n 5 shows the last 5 commits).
+--graph :-Adds an ASCII graph of the branch structure, showing the relationship between commits.
+--abbrev-commit :-Displays a shorter version of the commit hash (by default, git log --oneline shows an abbreviated hash).
+--decorate :-Displays references to branches and tags that point to commits.
+--all :-Shows the commit history for all branches, not just the current one.
+
+
+🔹 Example:
+git log --oneline
+Displays the commit history in a single line per commit, showing the short commit hash and commit message.
+
+🔹 Example:
+git log --oneline -n 5
+Displays the last 5 commits in the simplified format.
+
+🔹 Example:
+git log --oneline --graph
+Shows the commit history with a simple ASCII graph of the branch structure, along with the commit hash and message.
+
+🔹 Example:
+git log --oneline --decorate
+Displays the commit history with references to the branches and tags that point to each commit.
+
+🔹 Example:
+git log --oneline --all
+Shows the commit history for all branches in the repository, not just the current branch.
+
+
+🔹 Syntax:
+git log --oneline
+
+🔹 Syntax:
+git log --oneline -n <number>
+
+🔹 Syntax:
+git log --oneline --graph
+
+🔹 Syntax:
+git log --oneline --decorate
+
+🔹 Syntax:
+git log --oneline --all
