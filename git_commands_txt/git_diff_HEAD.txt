@@ -1,0 +1,47 @@
+
+
+🔹 Git Command: 
+git diff HEAD
+
+
+🔹 Description:
+The git diff HEAD command is used to show the differences between the current working directory (including both staged and unstaged changes) and the last commit (HEAD). 
+This allows you to view what changes have been made since the last commit, including both the changes you have staged for commit and the changes that are still unstaged.
+
+If you want to compare the changes in your working directory with the last committed state, this is the command to use.
+
+
+🔹 Options:
+git diff HEAD :-Compares the current working directory (including both staged and unstaged changes) with the last commit (HEAD).
+git diff HEAD --staged :-Compares only the staged changes (changes that are ready to be committed) with the last commit.
+git diff HEAD <file> :-Compares the changes made to a specific file since the last commit.
+git diff --name-only HEAD :-Shows only the names of the files that have changed since the last commit.
+
+
+🔹 Example:
+git diff HEAD
+Shows the differences between the current working directory (both staged and unstaged changes) and the last commit.
+
+🔹 Example:
+git diff HEAD --staged
+Shows the differences between the staged changes and the last commit (the changes that have been added to the staging area).
+
+🔹 Example:
+git diff HEAD <file>
+Shows the differences for a specific file (<file>) compared to the last commit.
+
+🔹 Example:
+git diff --name-only HEAD
+Shows only the names of the files that have been modified compared to the last commit, without showing the content changes.
+
+🔹 Syntax:
+git diff HEAD
+
+🔹 Syntax:
+git diff HEAD --staged
+
+🔹 Syntax:
+git diff HEAD <file>
+
+🔹 Syntax:
+git diff --name-only HEAD
