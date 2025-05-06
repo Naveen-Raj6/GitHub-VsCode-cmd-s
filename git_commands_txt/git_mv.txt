@@ -1,0 +1,41 @@
+
+
+🔹 Git Command: 
+git mv
+
+
+🔹 Description:
+The git mv command is used to rename or move files and folders in a Git repository. 
+It’s a shorthand for performing three steps manually:
+
+* mv old-name new-name (move/rename the file in the filesystem),
+* git rm old-name (remove the old file from Git),
+* git add new-name (add the new file to Git).
+
+Using git mv performs all of these in one command and stages the change for commit.
+
+
+🔹 Options:
+-f or --force :-Forces the move even if the target already exists.
+-k :-Skips move/rename if the destination file exists.
+-n or --dry-run :-Shows what would be done, without actually doing it.
+-v or --verbose :-Shows detailed output of the operation.
+
+🔹 Example:
+git mv file.txt docs/file.txt
+Moves file.txt to the docs/ folder and stages the move.
+
+🔹 Example:
+git mv old_name.py new_name.py
+Renames old_name.py to new_name.py.
+
+🔹 Example:
+git mv -f temp.txt backup.txt
+Forces the rename even if backup.txt already exists.
+
+🔹 Syntax:
+git mv [<options>] <source> <destination>
+
+* source: the file or directory you want to move or rename.
+* destination: the new path or name.
+* You can move multiple files to a directory: git mv file1 file2 folder/
