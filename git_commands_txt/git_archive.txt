@@ -1,0 +1,49 @@
+
+
+🔹 Git Command: 
+git archive
+
+
+🔹 Description:
+The git archive command is used to create an archive of files from a specific commit, branch, or tag. 
+It is typically used to generate a compressed archive (such as .zip or .tar) of the repository content at a particular point in time. 
+This is helpful when you want to share or distribute a snapshot of the repository’s files without including the entire Git history.
+
+It does not include:
+
+* Git metadata (history, branches, etc.).
+* Staged or uncommitted changes.
+
+
+🔹 Options:
+--format=<format> :-Specifies the format of the archive. Common formats include zip, tar, tar.gz, etc.
+--output=<file> :-Specifies the file name or path where the archive will be saved.
+--prefix=<path> :-Adds a prefix to all files in the archive (useful for structuring files inside the archive).
+<commit> :-Specifies the commit, branch, or tag to base the archive on.
+--remote=<repository> :-Specifies a remote repository for creating the archive (instead of the local repository).
+
+
+🔹 Example:
+git archive --format=zip --output=archive.zip HEAD
+Creates a .zip archive of the files from the latest commit (HEAD) and saves it as archive.zip.
+
+🔹 Example:
+git archive --format=tar --output=archive.tar.gz v1.0
+Creates a .tar.gz archive of the v1.0 tag and saves it as archive.tar.gz.
+
+🔹 Example:
+git archive --prefix=my-project/ --format=tar HEAD
+Creates a .tar archive of the latest commit, with all files prefixed by my-project/.
+
+🔹 Example:
+git archive --remote=ssh://user@host:/path/to/repo --format=zip --output=remote-archive.zip HEAD
+Creates a .zip archive of the latest commit from a remote repository and saves it as remote-archive.zip.
+
+🔹 Syntax:
+git archive --format=<format> --output=<file> <commit>
+
+🔹 Syntax:
+git archive --format=<format> --output=<file> --prefix=<path> <commit>
+
+🔹 Syntax:
+git archive --remote=<repository> --format=<format> --output=<file> <commit>
