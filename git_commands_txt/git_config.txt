@@ -1,0 +1,98 @@
+
+
+🔹 Git Command: 
+git config
+
+
+🔹 Description:
+The git config command is used to set, get, and manage Git configuration settings. 
+These settings control Git’s behavior and preferences—such as your username, email, editor, merge tool, aliases, and more.
+
+Configurations are stored in three levels:
+
+* System level (--system) → applies to all users on the system.
+* Global level (--global) → applies to the current user.
+* Local level (default) → applies to the specific Git repository.
+
+Local overrides global, and global overrides system settings.
+
+
+🔹 Options:
+--global :-Applies the config setting globally for the current user.
+--system :-Applies the setting for every user on the system (requires admin/root).
+--local :-Applies to the current repository (default).
+--unset :-Removes a configuration setting.
+--list or -l :-Lists all Git configuration settings.
+--edit :-Opens the config file in your default text editor.
+
+
+🔹 Example:
+git config --global user.name "Naveen Raj"
+Sets the Git global username to Naveen Raj.
+
+🔹 Example:
+git config --global user.email "naveen@example.com"
+Sets the Git global email (used for commits).
+
+🔹 Example:
+git config --list
+Lists all configuration settings currently in effect.
+
+🔹 Example:
+git config --unset user.name
+Removes the user.name configuration (from local or global based on context).
+
+🔹 Example:
+git config core.editor "code --wait"
+Sets VS Code as the default editor for Git commands like commit messages.
+
+🔹 Syntax:
+git config [<scope>] <key> <value>
+
+* scope is --system, --global, or --local (default).
+* key is the setting you want to change (e.g., user.name, core.editor).
+* value is the value to assign.
+
+
+*********************************************************************************************
+
+🔹 Git Command: 
+git config --global core.autocrlf
+
+
+🔹 Description:
+The core.autocrlf configuration controls how Git handles line endings (CRLF vs LF) between different operating systems:
+
+* LF (\n) is used in Unix/Linux/macOS.
+* CRLF (\r\n) is used in Windows.
+
+Line-ending issues can cause unnecessary diffs or bugs when working in a cross-platform team. 
+This setting helps Git automatically convert line endings for consistency.
+
+
+🔹 Common Values:
+Value	 Meaning
+true  :- Git will convert CRLF to LF when committing, and convert LF to CRLF when checking out. Use this on Windows to normalize line endings.
+input :- Git will convert CRLF to LF on commit, but leave line endings untouched on checkout. Best for macOS/Linux users.
+false :- Git will not perform any conversion. Use only if you're confident all contributors are consistent with line endings.
+
+🔹 Example:
+git config --global core.autocrlf true
+* Recommended on Windows.
+* Converts line endings to LF on commit and back to CRLF on checkout.
+
+🔹 Example:
+git config --global core.autocrlf input
+* Recommended on Linux/macOS.
+* Converts to LF on commit, and does not alter line endings on checkout.
+
+🔹 Example:
+git config --global core.autocrlf false
+No automatic line-ending conversion. Use only when everyone uses consistent line endings.
+
+🔹 Syntax:
+git config --global core.autocrlf <true|input|false>
+
+* --global: applies the setting to the current user across all repositories.
+* core.autocrlf: the key controlling line ending behavior.
+* <value>: true, input, or false as explained above.
