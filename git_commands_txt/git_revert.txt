@@ -1,0 +1,62 @@
+
+
+🔹 Git Command: 
+git revert
+
+
+🔹 Description:
+The git revert command is used to create a new commit that undoes the changes introduced by a previous commit, without altering the history of the repository. 
+It is a safe way to "undo" a commit because it doesn’t remove any commit from the history; instead, it creates a new commit that reverses the effects of the specified commit.
+
+This command is typically used when:
+
+* You want to undo a commit, but keeping the commit history intact.
+* You need to undo a commit that has already been pushed to a shared repository (unlike git reset, which is best for local changes).
+
+Unlike git reset, which moves the HEAD and can rewrite history, 
+git revert maintains the commit history while effectively canceling out the changes.
+
+
+🔹 Options:
+<commit> :-Specifies the commit hash to revert.
+-n or --no-commit :-Applies the revert changes but does not create a commit (stages the changes for a manual commit).
+-m <parent-number> :-Used for reverting a merge commit. Specifies which parent to keep.
+--edit :-Opens the commit message editor before completing the revert.
+--signoff :-Adds a Signed-off-by line to the commit message.
+-f or --force :-Forces a revert even if there are conflicts.
+
+
+🔹 Example:
+git revert a1b2c3d
+Reverts the changes made by commit a1b2c3d and creates a new commit with the changes undone.
+
+🔹 Example:
+git revert -n a1b2c3d
+Reverts the changes from commit a1b2c3d but does not automatically commit. This allows you to make additional changes before committing.
+
+🔹 Example:
+git revert -m 1 a1b2c3d
+Reverts a merge commit (a1b2c3d), keeping the first parent of the merge commit.
+
+🔹 Example:
+git revert --edit a1b2c3d
+Reverts the commit a1b2c3d and allows you to edit the commit message before committing.
+
+🔹 Example:
+git revert --signoff a1b2c3d
+Reverts the commit a1b2c3d and adds a "Signed-off-by" line to the commit message.
+
+🔹 Syntax:
+git revert <commit>
+
+🔹 Syntax:
+git revert -n <commit>
+
+🔹 Syntax:
+git revert -m <parent-number> <commit>
+
+🔹 Syntax:
+git revert --edit <commit>
+
+🔹 Syntax:
+git revert --signoff <commit>
