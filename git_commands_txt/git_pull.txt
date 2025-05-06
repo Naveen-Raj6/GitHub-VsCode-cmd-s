@@ -1,0 +1,41 @@
+
+
+🔹 Git Command: 
+git pull
+
+
+🔹 Description:
+The git pull command fetches changes from a remote repository and automatically merges them into your current local branch. 
+It is a combination of git fetch (to retrieve updates from the remote) and git merge (to integrate the changes into your working directory). 
+This is commonly used to sync your local repository with the remote one.
+
+
+🔹 Options:
+<remote> :-Specifies the remote repository name (e.g., origin).
+<branch> :-Specifies the branch to pull from the remote repository (e.g., main).
+--rebase :-Rebases the changes instead of merging them, preserving a linear history.
+--no-ff :-Prevents a fast-forward merge, even if the merge can be fast-forwarded.
+-v or --verbose :-Displays detailed output during the pull operation.
+--ff-only :-Only performs the pull if a fast-forward merge is possible.
+--all :-Fetches changes from all remotes, rather than just one.
+
+
+🔹 Example:
+git pull origin main
+Pulls changes from the main branch of the origin remote repository into your local branch.
+
+🔹 Example:
+git pull --rebase origin main
+Fetches changes from the main branch and rebases the local commits on top of the fetched changes, resulting in a linear commit history.
+
+🔹 Example:
+git pull --no-ff origin main
+Fetches changes from the main branch and ensures that the merge is not a fast-forward merge, creating a merge commit even if the merge could be fast-forwarded.
+
+🔹 Syntax:
+git pull [<remote>] [<branch>] [options]
+
+* remote is typically origin.
+* branch is the branch you want to pull from (e.g., main or develop).
+* Options like --rebase or --no-ff can be used to control how the pull operation is performed.
+
