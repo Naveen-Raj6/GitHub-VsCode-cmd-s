@@ -1,0 +1,56 @@
+
+
+🔹 Git Command: 
+git status
+
+
+🔹 Description:
+The git status command displays the state of the working directory and staging area. 
+It shows you:
+
+* Which files are staged (ready to commit)
+* Which files are modified but not yet staged
+* Which files are untracked (new files not added to Git)
+
+It helps you understand what Git will do when you run git commit.
+
+🔹 Options:
+-s or --short :-Outputs status in a short, concise format (e.g., M for modified, A for added).
+-b or --branch :-Shows the current branch and tracking info.
+--porcelain :-Produces machine-readable output for scripts and tools.
+--ignored :-Also shows ignored files (from .gitignore).
+--untracked-files[=<mode>] :-Controls untracked files shown: no, normal (default), or all.
+
+🔹 Example:
+git status
+
+Output:
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   style.css
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+        modified:   script.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        newfile.txt
+
+
+🔹 Example:
+git status -s
+
+Output:
+ M script.js
+A  style.css
+?? newfile.txt
+
+
+🔹 Syntax:
+git status [options]
+
+* Common usages: git status, git status -s, git status --ignored
