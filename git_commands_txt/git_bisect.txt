@@ -1,0 +1,64 @@
+
+
+🔹 Git Command: 
+git bisect
+
+
+🔹 Description:
+The git bisect command is used to find the commit that introduced a bug by performing a binary search. 
+This command helps you to quickly identify the problematic commit by testing a range of commits. 
+It is especially useful when you need to locate which commit in your repository introduced an issue or bug without manually checking each commit.
+
+The process involves:
+
+* Marking one commit as good (working correctly).
+* Marking another commit as bad (where the bug was introduced).
+* Git automatically checks out a commit halfway between the two, and you test it to determine if it’s good or bad.
+* The process continues until Git pinpoints the exact commit that introduced the problem.
+
+
+🔹 Options:
+start <bad> <good> :-Starts the bisect process, where <bad> is the commit where the bug is present and <good> is the commit where the bug is not present.
+git bisect good :-Marks the current commit as "good," meaning it does not contain the bug.
+git bisect bad :-Marks the current commit as "bad," meaning it contains the bug.
+git bisect reset :-Resets the bisect process and returns to the original HEAD.
+git bisect skip :-Skips the current commit (useful when you can’t test a commit or it’s not relevant).
+--term=<good-term> or --term=<bad-term> :-Customizes the terms used for "good" or "bad" commits.
+
+
+🔹 Example:
+git bisect start
+git bisect bad <bad-commit-hash>
+git bisect good <good-commit-hash>
+Starts the bisect process by marking the bad commit (where the bug is present) and the good commit (where the bug is not present).
+
+🔹 Example:
+git bisect good
+Marks the current commit as good, meaning the bug is not present.
+
+🔹 Example:
+git bisect bad
+Marks the current commit as bad, meaning the bug is present.
+
+🔹 Example:
+git bisect reset
+Resets the bisect process and returns to the branch you were working on before.
+
+🔹 Example:
+git bisect skip
+Skips the current commit if it can’t be tested or doesn’t help in identifying the bug.
+
+🔹 Syntax:
+git bisect start
+
+🔹 Syntax:
+git bisect bad <commit>
+
+🔹 Syntax:
+git bisect good <commit>
+
+🔹 Syntax:
+git bisect reset
+
+🔹 Syntax:
+git bisect skip
