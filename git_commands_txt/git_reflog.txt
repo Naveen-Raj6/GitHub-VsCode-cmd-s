@@ -1,0 +1,57 @@
+
+
+🔹 Git Command: 
+git reflog
+
+
+🔹 Description:
+The git reflog command shows a log of where your HEAD and branch references have been, 
+including updates from rebases, commits, resets, merges, and checkouts. 
+It is a powerful tool for recovering lost commits and understanding how your branch has changed over time.
+
+While git log shows commits in a linear history, git reflog shows all changes to HEAD, even those not part of the current branch’s commit graph. This makes it especially helpful when you've made a mistake (like a bad reset or rebase) and need to recover a previous state.
+
+
+🔹 Options:
+git reflog :-Shows the history of HEAD movements in the current repository.
+git reflog <branch> :-Shows the reflog for a specific branch.
+--date=relative :-Shows the date in relative terms (e.g., "2 hours ago").
+-n <number> or --max-count=<number> :-Limits the number of entries shown.
+--pretty=oneline :-Displays the reflog entries in one line each (abbreviated hash and message).
+
+
+🔹 Example:
+git reflog
+Displays the history of changes made to HEAD (e.g., commits, resets, checkouts, rebases).
+
+🔹 Example:
+git reflog -n 5
+Shows the last 5 movements of HEAD.
+
+🔹 Example:
+git reflog --date=relative
+Displays the reflog with commit dates in relative format like "5 minutes ago".
+
+🔹 Example:
+git reflog master
+Displays the reflog for the master branch (i.e., changes made to refs/heads/master).
+
+🔹 Example:
+git reset --hard HEAD@{3}
+Uses a reflog reference (HEAD@{3}) to reset your repository back to its state 3 actions ago—very useful for recovering from mistakes.
+
+
+🔹 Syntax:
+git reflog
+
+🔹 Syntax:
+git reflog <branch>
+
+🔹 Syntax:
+git reflog -n <number>
+
+🔹 Syntax:
+git reflog --date=relative
+
+🔹 Syntax:
+git reflog --pretty=oneline
