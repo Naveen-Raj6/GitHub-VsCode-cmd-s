@@ -19,18 +19,12 @@ configuration for version control. After running this command, your project beco
 
 
 🔹 Example:
-bash
-Copy
-Edit
 mkdir AstaRepo
 cd AstaRepo
 git init
 
 
 🔹 Output:
-bash
-Copy
-Edit
 Initialized empty Git repository in /path/to/AstaRepo/.git/
 
 
