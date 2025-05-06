@@ -1,0 +1,57 @@
+
+
+🔹 Git Command: 
+git branch
+
+
+🔹 Description:
+The git branch command is used to create, list, rename, and delete branches in a Git repository. 
+A branch in Git represents an independent line of development, allowing you to work on features 
+or bug fixes without affecting the main codebase (usually the main or master branch).
+
+By default, git branch only operates on the local branches (not remote ones), unless specifically requested.
+
+
+🔹 Options:
+(no option)	Lists all local branches.
+-a :-Lists both local and remote-tracking branches.
+-r :-Lists only remote-tracking branches.
+<branch-name> :-Creates a new branch with the specified name.
+-d <branch-name> :-Deletes the specified branch (only if fully merged).
+-D <branch-name> :-Force deletes the branch (even if not merged).
+-m <old-name> <new-name> :-Renames a branch from old-name to new-name.
+--merged :-Lists branches that have been merged into the current branch.
+--no-merged :-Lists branches that have not been merged into the current branch.
+
+
+🔹 Example:
+git branch
+Lists all local branches in the repository and highlights the current branch with an asterisk (*).
+
+🔹 Example:
+git branch new-feature
+Creates a new branch named new-feature.
+
+🔹 Example:
+git branch -d old-feature
+Deletes the old-feature branch if it has been fully merged.
+
+🔹 Example:
+git branch -D temp-fix
+Force-deletes the temp-fix branch, even if it has unmerged changes.
+
+🔹 Example:
+git branch -m dev development
+Renames the dev branch to development.
+
+🔹 Example:
+git branch -a
+Lists all branches, including remote-tracking branches.
+
+🔹 Syntax:
+git branch [<options>] [<branch-name>]
+
+* To create a branch: git branch <branch-name>
+* To delete a branch: git branch -d <branch-name>
+* To rename a branch: git branch -m <old-name> <new-name>
+
