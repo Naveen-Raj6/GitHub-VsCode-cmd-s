@@ -1,0 +1,57 @@
+
+
+🔹 Git Command: 
+git diff
+🔹 Description:
+The git diff command shows the differences between the working directory and the staging area, or between commits. 
+It helps you understand what has been changed, added, or removed in a file or across files before committing.
+
+By default, git diff compares the working directory to the staging area. You can also compare commits, branches, or files.
+
+🔹 Options:
+
+--staged or --cached :-Shows the differences between the staged files and the last commit (what is staged for the next commit).
+--name-only :-Displays only the names of files that have changed.
+--name-status :-Shows the names and status (added, modified, deleted) of changed files.
+--color :-Forces colored output (can be helpful for better visualization).
+-p or --patch :-Shows diffs for each hunk, allowing you to interactively select which changes to stage.
+--stat :-Displays a summary of changes in terms of file changes, insertions, and deletions.
+HEAD :-Compares the working directory or staged changes to the latest commit (HEAD).
+<commit> :-Compares the working directory or staged changes with a specific commit.
+
+
+🔹 Example:
+git diff
+
+Output:
+
+diff --git a/style.css b/style.css
+index 6ad9c1e..4a6f9b1 100644
+--- a/style.css
++++ b/style.css
+@@ -1,4 +1,4 @@
+ body {
+-   background-color: white;
++   background-color: black;
+ }
+
+
+🔹 Example:
+git diff --staged
+
+Shows the differences between the staged files and the last commit.
+
+🔹 Example:
+git diff --name-only
+
+Output:
+style.css
+script.js
+Shows only the names of modified files.
+
+
+🔹 Syntax:
+git diff [options] [<commit>] [--] [<path>...]
+
+* By default, compares the working directory to the staging area.
+* You can also compare between commits, branches, or specific files using options.
