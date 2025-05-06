@@ -1,0 +1,47 @@
+
+
+🔹 Git Command: 
+git remote
+
+
+🔹 Description:
+The git remote command is used to manage the remote repositories associated with your local Git repository. 
+It allows you to view, add, remove, and modify remotes. A remote repository is a version of your project that is hosted on the internet 
+or another network, and git remote helps you interact with these repositories.
+
+
+🔹 Options:
+-v :-Shows the URLs of all remotes associated with your repository (fetch and push URLs).
+add <name> <url> :-Adds a new remote repository with the specified name and URL (e.g., git remote add origin https://github.com/user/repository.git).
+remove <name> :-Removes the specified remote repository.
+rename <old-name> <new-name> :-Renames an existing remote from old-name to new-name.
+set-url <name> <new-url> :-Changes the URL for the specified remote repository.
+show <name> :-Displays detailed information about the specified remote, including branches and URLs.
+prune :-Removes any references to remote branches that have been deleted.
+
+
+🔹 Example:
+git remote -v
+Displays the URLs of all remotes associated with the local repository.
+
+🔹 Example:
+git remote add origin https://github.com/user/repository.git
+Adds a new remote named origin with the URL for the GitHub repository.
+
+🔹 Example:
+git remote remove origin
+Removes the remote named origin.
+
+🔹 Example:
+git remote rename origin upstream
+Renames the remote origin to upstream.
+
+🔹 Example:
+git remote show origin
+Displays detailed information about the origin remote, including the branches it tracks.
+
+🔹 Syntax:
+git remote [<command>] [<options>]
+
+* command can be one of the available subcommands like add, remove, rename, set-url, or show.
+* options include -v for listing remotes or other options like prune.
