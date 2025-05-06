@@ -1,0 +1,46 @@
+
+
+🔹 Git Command: 
+git push
+
+
+🔹 Description:
+The git push command uploads your local repository commits to a remote repository. 
+It is used to share changes with other collaborators or to back up your work to a central repository (like GitHub, GitLab, or Bitbucket).
+
+It is essential to push your changes to a remote branch to synchronize your local changes with the remote repository.
+
+
+🔹 Options:
+<remote> :-Specifies the remote repository name (e.g., origin).
+<branch> :-Specifies the branch to push (e.g., main).
+-u or --set-upstream :-Sets the upstream reference, so you can use git push without specifying the remote/branch in the future.
+--force or -f :-Forces the push, overwriting the remote branch (use with caution).
+--dry-run :-Simulates a push without actually pushing the changes.
+--all :-Pushes all branches to the remote repository.
+--tags :-Pushes all tags to the remote repository.
+
+
+🔹 Example:
+git push origin main
+Pushes the local main branch to the origin remote repository.
+
+🔹 Example:
+git push -u origin main
+Sets the upstream reference for the main branch on the origin remote so future git push commands can be done without specifying the remote and branch.
+
+🔹 Example:
+git push --force origin main
+Forces the push, overwriting the remote main branch (use with caution).
+
+🔹 Example:
+git push --tags
+Pushes all tags to the remote repository.
+
+
+🔹 Syntax:
+git push [<remote>] [<branch>] [options]
+
+* remote is usually origin by default.
+* branch is the local branch you want to push (like main, develop).
+* Common options: -u (sets the upstream), --force (force push), --all (push all branches).
