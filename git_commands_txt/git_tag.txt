@@ -1,0 +1,68 @@
+
+
+🔹 Git Command: 
+git tag
+
+
+🔹 Description:
+The git tag command is used to create tags that reference specific commits in the Git history. 
+Tags are often used to mark important points in the project’s history, such as release versions (e.g., v1.0, v2.1).
+
+There are two types of tags in Git:
+
+* Lightweight Tags: A simple reference to a commit (like a branch).
+* Annotated Tags: These are full objects in the Git database, containing more information (e.g., tagger name, date, message).
+
+
+🔹 Options:
+-a :-Creates an annotated tag.
+-m "message" :-Provides a message for an annotated tag.
+-f :-Forces the creation of a tag even if it already exists.
+-l or --list :-Lists all tags in the repository.
+-d :-Deletes a tag.
+v :-Verifies a tag (shows tag details).
+<tag-name> :-Specifies the name of the tag to create or delete.
+
+
+🔹 Example:
+git tag v1.0
+Creates a lightweight tag v1.0 pointing to the current commit.
+
+🔹 Example:
+git tag -a v1.0 -m "Release version 1.0"
+Creates an annotated tag v1.0 with a message "Release version 1.0".
+
+🔹 Example:
+git tag -l
+Lists all tags in the repository.
+
+🔹 Example:
+git tag -d v1.0
+Deletes the v1.0 tag.
+
+🔹 Example:
+git push origin v1.0
+Pushes the v1.0 tag to the remote repository.
+
+🔹 Example:
+git push origin --tags
+Pushes all tags to the remote repository.
+
+
+🔹 Syntax:
+git tag <tag-name>
+
+🔹 Syntax:
+git tag -a <tag-name> -m "<message>"
+
+🔹 Syntax:
+git tag -l
+
+🔹 Syntax:
+git tag -d <tag-name>
+
+🔹 Syntax:
+git push origin <tag-name>
+
+🔹 Syntax:
+git push origin --tags
