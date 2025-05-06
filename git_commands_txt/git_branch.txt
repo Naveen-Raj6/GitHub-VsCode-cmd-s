@@ -55,3 +55,55 @@ git branch [<options>] [<branch-name>]
 * To delete a branch: git branch -d <branch-name>
 * To rename a branch: git branch -m <old-name> <new-name>
 
+
+
+
+🔹 What is git branch -M?
+The -M flag in git branch stands for "move/rename forcefully."
+It renames the current branch or any specified branch to a new name, even if the new name already exists (it will overwrite).
+
+This is different from -m, which is a safer version and fails if the new branch name already exists.
+
+
+🔹 Syntax:
+git branch -M <new-branch-name>
+
+or (for renaming a specific branch):
+
+🔹 Syntax:
+git branch -M <old-branch-name> <new-branch-name>
+
+
+🔹 Examples:
+✅ git branch -M main
+This renames your current branch (usually master) to main.
+It’s commonly used when:
+
+* You want to change the default branch name from master to main (modern Git convention).
+* GitHub and other platforms now encourage using main instead of master.
+
+✅ git branch -M mastery
+This renames your current branch to mastery.
+You might do this:
+
+* To follow your custom naming conventions.
+* To use a name more meaningful to your team/project.
+
+
+🔹 Why do we use them?
+* To rename the default branch in a local repository (e.g., from master → main).
+* To align with remote repositories that expect a certain branch name (e.g., GitHub now uses main by default).
+* To organize branches by better naming conventions (e.g., development, production, feature-x, mastery, etc.).
+* -M is used instead of -m when you want to force the rename even if a branch with the new name already exists.
+
+🔹 Difference between git branch -M main and git branch -M mastery:
+git branch -M main:-
+* Renames current branch to main.	
+* Used to update from old master to new standard main.
+
+git branch -M mastery:-
+* Renames current branch to mastery.	
+* Used for custom naming or personalized workflows.
+
+The only difference is the target name — technically, both do the same thing: rename your branch to the specified name, forcefully.
+
