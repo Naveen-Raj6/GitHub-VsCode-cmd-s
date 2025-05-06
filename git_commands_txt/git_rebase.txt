@@ -1,0 +1,54 @@
+
+
+🔹 Git Command: 
+git rebase
+
+
+🔹 Description:
+The git rebase command is used to reapply commits on top of another base tip. 
+It is commonly used to:
+
+* Integrate changes from one branch into another while keeping a linear commit history.
+* Avoid merge commits, which can clutter the history.
+* Rewrite commit history (in interactive mode) for cleaner, more readable logs.
+
+It works by:
+
+* Temporarily removing your commits from the current branch.
+* Updating the base to the new branch (or commit).
+* Reapplying your commits on top of the new base.
+
+
+🔹 Options:
+--onto :-Rebases a selection of commits onto a different branch.
+-i or --interactive :-Lets you edit, squash, or reorder commits during rebase.
+--continue :-Resumes rebase after conflict resolution.
+--abort :-Cancels the rebase and restores the original branch state.
+--skip :-Skips the current commit causing a conflict.
+
+🔹 Example:
+git checkout feature
+git rebase main
+Rebases feature branch commits onto the latest main.
+
+🔹 Example:
+git rebase -i HEAD~3
+Interactively rebases the last 3 commits (used to edit, squash, reword, etc.).
+
+🔹 Example:
+git rebase --onto dev main feature
+Takes the commits in feature that are not in main, and rebases them onto dev.
+
+🔹 Example:
+git rebase --abort
+Cancels a rebase if something goes wrong.
+
+
+🔹 Syntax:
+git rebase [base-branch]
+
+🔹 Syntax:
+git rebase -i [base-branch or commit]
+
+🔹 Syntax:
+git rebase --onto <new-base> <upstream> <branch>
