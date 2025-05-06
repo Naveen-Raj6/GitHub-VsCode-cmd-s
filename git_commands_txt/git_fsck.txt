@@ -1,0 +1,61 @@
+
+
+🔹 Git Command: 
+git fsck
+
+
+🔹 Description:
+The git fsck (file system check) command is used to verify the integrity of Git objects and check for corruption in the repository. 
+It goes through all objects in the .git/objects directory and ensures they are valid, reachable, and not dangling (unreferenced).
+
+This command is especially useful when:
+
+* You want to check for repository corruption
+* You need to find dangling commits (e.g., orphaned after a reset or rebase)
+* You're maintaining or recovering a repository
+
+
+🔹 Options:
+--full :-Performs a thorough check of all objects (default behavior in recent Git versions).
+--strict :-Performs even more strict checking—useful for finding minor issues that --full might skip.
+--name-objects :-Shows human-readable names of objects (e.g., filenames or ref names).
+--lost-found :-Writes dangling objects to .git/lost-found so you can inspect or recover them.
+--cache :-Checks the index file (staging area) for issues.
+--connectivity-only :-Only checks for object reachability, skips SHA-1 integrity validation.
+
+
+🔹 Example:
+git fsck
+Checks all objects for integrity and reports any issues like dangling commits, missing blobs, or invalid trees.
+
+🔹 Example:
+git fsck --full
+Runs a full, deep integrity check of the repository.
+
+🔹 Example:
+git fsck --strict
+Performs a strict validation of Git objects and references, identifying even minor problems.
+
+🔹 Example:
+git fsck --name-objects
+Displays object IDs along with human-readable names (where available), helpful for identifying which files/branches the objects belong to.
+
+🔹 Example:
+git fsck --lost-found
+Writes unreferenced (dangling) objects to .git/lost-found so you can recover them later.
+
+
+🔹 Syntax:
+git fsck
+
+🔹 Syntax:
+git fsck --full
+
+🔹 Syntax:
+git fsck --strict
+
+🔹 Syntax:
+git fsck --name-objects
+
+🔹 Syntax:
+git fsck --lost-found
