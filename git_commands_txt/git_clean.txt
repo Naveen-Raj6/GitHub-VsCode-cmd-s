@@ -1,0 +1,61 @@
+
+
+🔹 Git Command: 
+git clean
+
+
+🔹 Description:
+The git clean command is used to remove untracked files from the working directory. 
+It is helpful when you have files that are not tracked by Git, such as temporary files, build artifacts, 
+or files ignored by .gitignore. This command does not affect tracked files or files already staged for commit.
+
+It’s often used to:
+
+* Clean up files that are not under version control.
+* Remove build or temporary files that are not useful in version control.
+
+Caution: It permanently deletes untracked files and directories. Make sure to check the files you want to delete before running the command.
+
+
+🔹 Options:
+-f :-Forces the removal of untracked files (required to run the command).
+-n or --dry-run :-Shows which files would be removed without actually removing them (useful for previewing).
+-d :-Removes untracked directories in addition to untracked files.
+-x :-Removes files ignored by .gitignore.
+-X :-Removes only the files ignored by .gitignore, leaving other untracked files.
+
+
+🔹 Example:
+git clean -n
+Shows which files would be removed without actually deleting them.
+
+🔹 Example:
+git clean -f
+Removes untracked files from the working directory.
+
+🔹 Example:
+git clean -fd
+Removes untracked files and untracked directories.
+
+🔹 Example:
+git clean -fx
+Removes all untracked files and files ignored by .gitignore.
+
+🔹 Example:
+git clean -fX
+Removes only the files ignored by .gitignore.
+
+🔹 Syntax:
+git clean -n
+
+🔹 Syntax:
+git clean -f
+
+🔹 Syntax:
+git clean -fd
+
+🔹 Syntax:
+git clean -fx
+
+🔹 Syntax:
+git clean -fX
