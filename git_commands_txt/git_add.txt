@@ -1,0 +1,41 @@
+
+
+🔹 Git Command:
+git add
+
+
+🔹 Description:
+The git add command stages changes (new, modified, or deleted files) to be included in the next commit. 
+Git uses a staging area (index) to manage what will go into a commit.
+git add does not actually save the changes to the repository — it simply prepares them for the next git commit.
+
+
+🔹 Options:
+<file> :-Stages a specific file. Example: git add index.html
+
+. :-Stages all changes in the current directory (recursively).
+
+-A or --all :-Stages all changes including deletions.
+
+-u :-Stages only modified and deleted files (not new ones).
+
+-n or --dry-run	:-Shows what would be staged, without actually doing it.
+
+-v or --verbose	:-Shows files as they are being staged.
+
+-p or --patch :-Allows you to interactively choose parts (hunks) of files to stage.
+
+
+🔹 Example:
+git add index.html             # Stage one specific file
+git add .                      # Stage all files in the current folder and subfolders
+git add -A                     # Stage all changes (including deletions)
+git add -p script.js           # Stage selected portions of script.js interactively
+
+🔹 Syntax:
+git add [<pathspec>...]
+git add [options] [--] <pathspec>...
+
+* <pathspec> is the file or directory you want to stage.
+* Common usage includes git add ., git add filename, or git add -A.
+
