@@ -49,6 +49,7 @@ Describes the current commit, even if there are no tags, using the commit hash i
 git describe --match "v*" 
 Describes the current commit using only tags that match the pattern v* (e.g., v1.0, v2.0, etc.).
 
+
 🔹 Syntax:
 git describe
 
