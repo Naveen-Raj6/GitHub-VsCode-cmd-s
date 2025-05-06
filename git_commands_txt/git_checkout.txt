@@ -1,0 +1,50 @@
+
+
+🔹 Git Command: 
+git checkout
+
+
+🔹 Description:
+The git checkout command is used to:
+
+* Switch between branches in a Git repository.
+* Restore files or commits to your working directory.
+* Create a new branch from a specific commit or the current branch.
+
+🔄 Note:Starting from Git 2.23+, git switch and git restore were introduced to split the responsibilities of git checkout for clarity. 
+        But git checkout still works and is widely used.
+
+
+🔹 Options:
+<branch> :-Switches to the specified branch.
+-b <new-branch> :-Creates and switches to a new branch from current HEAD.
+<commit> -- <file> :-Restores the file from a specific commit.
+-- :-Separates branch/commit name from file paths to avoid confusion.
+-f :-Forces the switch and discards local changes.
+-q :-Suppresses output (quiet mode).
+
+🔹 Example:
+git checkout main
+Switches to the main branch.
+
+🔹 Example:
+git checkout -b feature-login
+Creates and switches to a new branch called feature-login.
+
+🔹 Example:
+git checkout a1b2c3d4
+Checks out a previous commit in a "detached HEAD" state.
+
+🔹 Example:
+git checkout HEAD~1 -- index.html
+Restores the version of index.html from the previous commit.
+
+
+🔹 Syntax:
+git checkout [branch-name]
+
+🔹 Syntax:
+git checkout -b [new-branch-name]
+
+🔹 Syntax:
+git checkout [commit] -- [file-path]
