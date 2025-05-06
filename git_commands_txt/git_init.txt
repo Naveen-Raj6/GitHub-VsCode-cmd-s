@@ -7,7 +7,7 @@ git init
 The git init command initializes a new Git repository in your current project folder.
 It creates a hidden .git/ directory that stores all the metadata, history, and 
 configuration for version control. After running this command, your project becomes
- a Git-tracked repository, and you can start using other Git commands like add, commit, and push.
+a Git-tracked repository, and you can start using other Git commands like add, commit, and push.
 
 
 🔹 Options:
@@ -15,7 +15,7 @@ configuration for version control. After running this command, your project beco
 
 --separate-git-dir=<path> :- Stores the actual .git directory elsewhere while keeping the working tree clean.
 
--q, --quiet	:- Suppresses standard output messages during initialization.
+-q, --quiet :-Suppresses standard output messages during initialization.
 
 
 🔹 Example:
