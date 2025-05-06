@@ -1,0 +1,76 @@
+
+
+🔹 Git Command: 
+git show
+
+
+🔹 Description:
+The git show command is used to display information about a commit or object. 
+By default, it shows details of the most recent commit, including the commit hash, author, date, and the changes (diff) made in that commit. 
+It can also be used to show other Git objects, such as tags or branches, or specific commits.
+
+This command is useful when you want to view the details of a particular commit, or if you want to see a specific file’s contents or changes made in a commit.
+
+🔹 Options:
+<commit> :-Displays information about a specific commit (e.g., git show <commit-hash>).
+--stat :-Shows a summary of changes made in the commit (files changed, insertions, deletions).
+--name-only :-Displays only the names of the files changed in the commit.
+--name-status :-Displays the names and status (added, modified, deleted) of the files changed in the commit.
+--patch :-Displays the diff (patch) of the commit (this is the default behavior).
+--pretty=<format> :-Customizes the output format of the commit details (e.g., oneline, short, full, fuller).
+--color :-Forces the command output to be colorized.
+--follow :-Follows the history of a file, showing commits that affect that file even if it was renamed.
+
+
+🔹 Example:
+git show
+Displays the details of the most recent commit, including the commit hash, author, date, and changes (diff).
+
+🔹 Example:
+git show <commit-hash>
+Displays the details of a specific commit, where <commit-hash> is the full or abbreviated commit hash.
+
+🔹 Example:
+git show --stat
+Displays the details of the most recent commit along with a summary of the changes (files changed, number of insertions, deletions).
+
+🔹 Example:
+git show --name-only
+Displays the names of the files changed in the most recent commit without the actual diff.
+
+🔹 Example:
+git show --name-status
+Displays the names and status of the files changed in the most recent commit (e.g., added, modified, deleted).
+
+🔹 Example:
+git show --pretty=oneline <commit-hash>
+Displays the details of a specific commit (<commit-hash>) in a single line format, showing the commit hash and the commit message.
+
+🔹 Example:
+git show --follow <file>
+Shows the commit history of a specific file, even if it has been renamed, following its history across commits.
+
+
+🔹 Syntax:
+git show
+
+🔹 Syntax:
+git show <commit-hash>
+
+🔹 Syntax:
+git show --stat
+
+🔹 Syntax:
+git show --name-only
+
+🔹 Syntax:
+git show --name-status
+
+🔹 Syntax:
+git show --pretty=<format>
+
+🔹 Syntax:
+git show --color
+
+🔹 Syntax:
+git show --follow <file>
