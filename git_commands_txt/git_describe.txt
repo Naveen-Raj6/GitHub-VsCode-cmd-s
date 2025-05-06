@@ -1,0 +1,68 @@
+
+
+🔹 Git Command: 
+git describe
+
+
+🔹 Description:
+The git describe command is used to generate a human-readable name for the current commit, based on the most recent tag in the commit history. 
+It is typically used to describe the commit in a more understandable format, especially when the commit is not directly tagged or has a long, complex hash.
+
+The command provides a name based on the following:
+
+* The most recent tag in the current branch.
+* The number of commits since that tag.
+* The short hash of the current commit.
+
+This command is helpful when you want to refer to a specific commit using a more friendly identifier than a raw commit hash.
+
+
+🔹 Options:
+--tags :-Uses any tag (not just annotated tags) for the description.
+--abbrev=<n> :-Specifies the number of characters of the commit hash to show in the description.
+--long :-Forces the description to include the full commit hash, even if it’s a clean tag.
+--always :-Shows a description even if no tags exist. This will use the commit hash itself if no tags are found.
+--match=<pattern> :-Limits the search for tags to those matching the specified pattern.
+
+
+🔹 Example:
+git describe
+Describes the current commit based on the most recent tag, the number of commits since that tag, and the short hash.
+
+🔹 Example:
+git describe --tags
+Describes the current commit using any tag, including lightweight tags.
+
+🔹 Example:
+git describe --abbrev=7
+Describes the current commit, but shortens the commit hash to 7 characters.
+
+🔹 Example:
+git describe --long
+Describes the current commit, including the full commit hash, even if it’s a clean tag.
+
+🔹 Example:
+git describe --always
+Describes the current commit, even if there are no tags, using the commit hash itself.
+
+🔹 Example:
+git describe --match "v*" 
+Describes the current commit using only tags that match the pattern v* (e.g., v1.0, v2.0, etc.).
+
+🔹 Syntax:
+git describe
+
+🔹 Syntax:
+git describe --tags
+
+🔹 Syntax:
+git describe --abbrev=<n>
+
+🔹 Syntax:
+git describe --long
+
+🔹 Syntax:
+git describe --always
+
+🔹 Syntax:
+git describe --match=<pattern>
