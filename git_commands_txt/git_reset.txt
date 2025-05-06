@@ -1,0 +1,48 @@
+
+
+🔹 Git Command: 
+git reset
+
+
+🔹 Description:
+The git reset command resets the current branch's history to a specific state. 
+It can modify the staging area and the working directory, depending on the options used. 
+It is primarily used to undo changes, remove commits, or move the HEAD pointer to a different commit.
+
+There are three primary modes for git reset:
+
+* Soft Reset: Moves the HEAD pointer but keeps changes staged.
+* Mixed Reset (default): Moves the HEAD pointer and resets the staging area, but leaves the working directory unchanged.
+* Hard Reset: Moves the HEAD pointer and discards changes in both the staging area and working directory.
+
+
+🔹 Options:
+--soft <commit> :-Resets the HEAD pointer to the specified commit, but keeps all changes staged.
+--mixed <commit> (default) :-Resets the HEAD pointer to the specified commit and unstages the changes (but keeps them in the working directory).
+--hard <commit> :-Resets the HEAD pointer to the specified commit and removes all changes from both the staging area and working directory.
+--merge :-Resets the HEAD pointer and adjusts the index, but does not touch the working directory.
+--keep :-Resets the HEAD pointer but keeps changes that haven't been modified in the working directory.
+
+
+🔹 Example:
+git reset --soft HEAD~1
+Resets the HEAD to the previous commit, keeping changes staged for the next commit.
+
+🔹 Example:
+git reset --mixed HEAD~1
+Resets the HEAD to the previous commit and unstages changes, but keeps them in the working directory.
+
+🔹 Example:
+git reset --hard HEAD~1
+Resets the HEAD to the previous commit and discards all changes in the working directory and staging area.
+
+🔹 Example:
+git reset --hard <commit-hash>
+Resets the HEAD to a specific commit (identified by hash) and discards all changes made after that commit.
+
+
+🔹 Syntax:
+git reset [--soft | --mixed | --hard | --merge | --keep] <commit>
+
+* commit can be a commit hash, HEAD~n (n commits ago), or other references like HEAD.
+* Common uses include undoing a commit or unstaging changes from the staging area.
