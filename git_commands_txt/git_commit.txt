@@ -1,0 +1,41 @@
+
+
+🔹 Git Command:
+git commit
+
+
+🔹 Description:
+The git commit command captures a snapshot of the project's staged changes. 
+Once you’ve used git add to stage files, git commit saves those changes to the repository history along with a message describing the commit. 
+Each commit is identified by a unique hash and can be revisited or reverted later.
+
+
+🔹 Options:
+-m "message" :-Adds a commit message inline (recommended for most cases).
+
+-a :-Automatically stages all tracked files before committing (skips git add for modified files).
+
+--amend :-Rewrites the last commit — use to change the commit message or add forgotten changes.
+
+--no-edit :-When amending, keeps the existing commit message.
+
+--allow-empty :-Creates a commit even if there are no changes (useful for tagging or testing).
+
+--dry-run :-Simulates the commit without actually making one.
+
+-v :-Shows the diff in the editor while writing the commit message.
+
+
+🔹 Example:
+git commit -m "Initial commit"                     # Simple commit with message
+git commit -a -m "Fixed layout and styles"         # Automatically stages and commits tracked changes
+git commit --amend -m "Updated commit message"     # Edits the last commit message
+
+
+🔹 Syntax:
+git commit [-a] [-m <msg>] [--amend] [--allow-empty] [--no-edit] [options]
+
+* Always use a clear and meaningful message to describe what changed in the commit.
+* Combine git add + git commit in scripts or workflows to automate version control.
+
+
