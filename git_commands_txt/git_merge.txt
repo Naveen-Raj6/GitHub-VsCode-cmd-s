@@ -1,0 +1,43 @@
+
+
+🔹 Git Command: 
+git merge
+
+
+🔹 Description:
+The git merge command combines the changes from one branch into another. It takes the contents of a source branch and integrates them into the current branch. The merge can be:
+
+* A fast-forward merge if the current branch is behind and no commits have diverged.
+* A three-way merge if the branches have diverged and Git needs to reconcile the changes.
+
+
+🔹 Options:
+--no-ff :-Prevents a fast-forward merge, even if the merge could be fast-forwarded, and forces the creation of a merge commit.
+--ff-only :-Ensures that the merge will only happen if it can be a fast-forward merge.
+--squash :-Combines all changes from the source branch into a single commit on the current branch.
+--abort :-Cancels the merge if conflicts arise and restores the branch to its previous state.
+--strategy=<strategy> :-Specifies the merge strategy to use (e.g., recursive, ours, theirs).
+
+
+🔹 Example:
+git merge feature-branch
+Merges the feature-branch into your current branch.
+
+🔹 Example:
+git merge --no-ff feature-branch
+Merges feature-branch into the current branch, even if a fast-forward merge is possible, and creates a merge commit.
+
+🔹 Example:
+git merge --squash feature-branch
+Merges feature-branch into the current branch, but combines all its changes into a single commit.
+
+🔹 Example:
+git merge --abort
+Cancels the ongoing merge and restores the branch to its state before the merge.
+
+
+🔹 Syntax:
+git merge [<branch>] [options]
+
+* branch is the branch you want to merge into the current branch.
+* Options like --no-ff, --squash, and --abort modify how the merge is handled.
