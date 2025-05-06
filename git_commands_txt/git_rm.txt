@@ -1,0 +1,44 @@
+
+
+🔹 Git Command: 
+git rm
+
+
+🔹 Description:
+The git rm command is used to remove files from the working directory and staging area (index) in Git. 
+It stages the removal of the files for the next commit. 
+This command can be used to remove files both from the filesystem and from the Git repository.
+
+By default, it removes the file from both the working directory and staging area, but you can also use options to remove files only from the staging area (without deleting them from the working directory).
+
+
+🔹 Options:
+--cached :-Removes the file from the staging area but keeps it in the working directory (useful if you want to stop tracking a file without deleting it).
+-f or --force :-Forces removal of files that have changes staged for commit or are not tracked (use with caution).
+--ignore-unmatch :-Does not show an error if the file is not found in the staging area.
+-r :-Recursively removes files in directories.
+--dry-run :-Simulates the removal of the file(s) without actually deleting them, allowing you to see what would happen.
+
+
+🔹 Example:
+git rm file.txt
+Removes file.txt from the working directory and staging area.
+
+🔹 Example:
+git rm --cached file.txt
+Removes file.txt from the staging area, but keeps the file in the working directory (unstages the file for commit).
+
+🔹 Example:
+git rm -r folder/
+Recursively removes all files in the folder/ directory from the staging area and working directory.
+
+🔹 Example:
+git rm --dry-run file.txt
+Simulates the removal of file.txt, showing what would happen without actually deleting it.
+
+
+🔹 Syntax:
+git rm [<options>] <file>...
+
+* file is the file or directory to remove.
+* Options like --cached, -r, and --force modify the behavior of the removal.
