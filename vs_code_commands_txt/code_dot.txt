@@ -1,0 +1,53 @@
+
+
+🔹 Terminal Command:
+code .
+
+
+🔹 Description:
+The code . command is used to open the current directory in Visual Studio Code (VS Code).
+It launches VS Code from the terminal with the current folder loaded as a project workspace.
+This command works only if VS Code’s command-line tools are installed (code command is available globally).
+
+
+🔹 Options:
+
+* . : Refers to the current directory.
+Example: code . opens the current folder in VS Code.
+
+* <foldername> : Opens a specific folder in VS Code.
+Example: code myproject/
+
+* <filename> : Opens a specific file in VS Code.
+Example: code index.html
+
+* -n : Opens a new VS Code window.
+Example: code -n .
+
+* -r : Opens in the existing VS Code window (replaces current).
+Example: code -r .
+
+* -a : Adds the folder to the currently active VS Code window.
+Example: code -a utils/
+
+* --disable-extensions : Opens VS Code without any extensions.
+Example: code --disable-extensions .
+
+
+🔹 Example:
+
+code .                            # Open current folder in VS Code
+code app.js                       # Open a specific file
+code src/                         # Open a specific folder
+code -n .                         # Open current folder in a new window
+code --disable-extensions .       # Open VS Code without loading extensions
+
+
+🔹 Syntax:
+
+code [options] [file|folder]
+
+Common usage includes:
+code .
+code filename
+code -n foldername
