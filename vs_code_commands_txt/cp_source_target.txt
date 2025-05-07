@@ -1,0 +1,53 @@
+
+
+🔹 Terminal Command:
+cp source target
+
+
+🔹 Description:
+The cp (copy) command is used to copy files or directories from one location to another.
+By default, it copies files. To copy directories, you must use the -r option (recursive).
+
+
+🔹 Options:
+
+* source target : Copy a file to a new location or name.
+Example: cp file.txt backup.txt
+
+* source dir/ : Copy file into a directory.
+Example: cp index.html public/
+
+* -r or --recursive : Copy a directory and its contents recursively.
+Example: cp -r src/ backup/
+
+* -i : Prompt before overwriting files.
+Example: cp -i data.json backup/
+
+* -f : Force overwrite without prompting.
+Example: cp -f config.js settings/
+
+* -v : Verbose — shows each file being copied.
+Example: cp -v a.txt b.txt files/
+
+* -n : Do not overwrite existing files.
+Example: cp -n app.js build/
+
+
+🔹 Example:
+
+cp index.html dist/                   # Copy file to dist folder
+cp file1.txt file2.txt backup/        # Copy multiple files to a folder
+cp -r images/ assets/                 # Recursively copy folder and contents
+cp -iv config.json config_backup/     # Prompt before overwriting, show progress
+cp -f script.js public/               # Force overwrite if file exists
+
+
+🔹 Syntax:
+
+cp [options] source target
+cp [options] source... directory
+
+Common usage includes:
+cp file1 file2
+cp file folder/
+cp -r folder1 folder2/
