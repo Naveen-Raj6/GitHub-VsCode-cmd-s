@@ -1,0 +1,33 @@
+
+
+🔹 Terminal Command:
+clear
+
+
+🔹 Description:
+The clear command is used to clear the terminal screen, removing all previous output and giving you a clean workspace.
+It does not delete any data or stop any running process — it simply scrolls the terminal buffer to display a blank screen.
+
+
+🔹 Options:
+
+* (No options required or commonly used)
+Just type clear to clear the terminal.
+
+* clear && ls : Clears the screen and immediately lists the contents of the current directory.
+Useful for refreshing your view.
+
+
+🔹 Example:
+
+clear                          # Clear the terminal screen
+clear && ls                    # Clear screen and list current files/folders
+
+
+🔹 Syntax:
+
+clear
+
+Common usage includes:
+clear to reset the terminal view.
+clear && command to clear and then run a command.
