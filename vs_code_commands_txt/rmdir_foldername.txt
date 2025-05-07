@@ -1,6 +1,6 @@
 
 
-🔹 Terminal Command:
+🔹 Terminal Command:-
 rmdir foldername
 
 
