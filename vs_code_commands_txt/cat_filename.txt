@@ -1,0 +1,48 @@
+
+
+🔹 Terminal Command:
+cat filename
+
+
+🔹 Description:
+The cat (short for concatenate) command is used to display the contents of a file or multiple files.
+It can also be used to create, combine, or redirect files.
+By default, cat filename prints the content of the file directly to the terminal.
+
+
+🔹 Options:
+
+* cat filename : Displays contents of a file.
+Example: cat notes.txt
+
+* cat file1 file2 : Displays and combines contents of multiple files.
+Example: cat part1.txt part2.txt
+
+* cat > filename : Creates a file and accepts input from the user (ends with Ctrl+D).
+Example: cat > newfile.txt
+
+* cat >> filename : Appends user input to an existing file.
+Example: cat >> log.txt
+
+* -n : Number all output lines.
+Example: cat -n script.js
+
+* -b : Number only non-empty lines.
+Example: cat -b readme.md
+
+* -s : Squeeze multiple blank lines into one.
+Example: cat -s report.txt
+
+
+🔹 Example:
+
+cat readme.md                   # Show file content
+cat file1.txt file2.txt         # Combine and show multiple files
+cat > new.txt                   # Create a new file (Ctrl+D to finish input)
+cat >> existing.txt             # Append to an existing file
+cat -n index.html               # Show file with line numbers
+
+
+🔹 Syntax:
+
+cat [options] [file...]
