@@ -1,0 +1,64 @@
+
+
+🔹 Terminal Command:
+nano filename
+
+
+🔹 Description:
+The nano filename command is used to create or edit a file using the Nano text editor in the terminal.
+If the file does not exist, it creates a new one with the specified name. If it does exist, it opens the file for editing.
+Nano is simple and beginner-friendly, making it great for quick changes from the terminal.
+
+
+🔹 Options:
+
+* filename : Name of the file to open or create.
+Example: nano notes.txt
+
+* -l : Show line numbers while editing.
+Example: nano -l main.py
+
+* -B : Creates a backup file (filename~) before saving changes.
+Example: nano -B config.json
+
+* -m : Enables mouse support (clicking to move cursor).
+Example: nano -m file.txt
+
+* -i : Enables auto-indentation on new lines.
+Example: nano -i code.js
+
+* -c : Constantly shows cursor position.
+Example: nano -c script.sh
+
+
+🔹 Common Nano Keyboard Shortcuts (While Editing):
+
+Ctrl + O : Write (save) changes to the file.
+
+Ctrl + X : Exit the Nano editor.
+
+Ctrl + K : Cut the current line.
+
+Ctrl + U : Paste the last cut line.
+
+Ctrl + W : Search inside the file.
+
+Ctrl + G : Show help menu.
+
+
+🔹 Example:
+
+nano index.html                 # Create or edit index.html
+nano -l app.js                 # Open app.js with line numbers
+nano -B config.json            # Open config.json and make a backup
+nano -c -i server.py           # Open server.py with cursor position and auto-indent
+
+
+🔹 Syntax:
+
+nano [options] filename
+
+Common usage includes:
+nano file.txt
+nano -l filename.js
+nano -B file.conf
