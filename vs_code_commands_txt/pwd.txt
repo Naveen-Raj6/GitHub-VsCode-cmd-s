@@ -1,0 +1,39 @@
+
+
+🔹 Terminal Command:
+pwd
+
+
+🔹 Description:
+The pwd (print working directory) command is used to display the current working directory in the terminal.
+It shows the full absolute path of the directory you're currently in. This is useful for confirming your location within the file system.
+
+
+🔹 Options:
+
+* (No options are typically required for this command)
+The basic command just outputs the current directory path.
+
+* -L : Displays the logical path (following symbolic links).
+Example: pwd -L
+
+* -P : Displays the physical path (ignores symbolic links).
+Example: pwd -P
+
+
+🔹 Example:
+
+pwd                            # Print the current directory path
+pwd -L                         # Print the logical path (resolve symlinks)
+pwd -P                         # Print the physical path (no symlinks)
+
+
+🔹 Syntax:
+
+pwd [options]
+
+Common usage includes:
+pwd
+pwd -L
+pwd -P
+
