@@ -1,0 +1,47 @@
+
+
+🔹 Terminal Command:
+mv source target
+
+
+🔹 Description:
+The mv (move) command is used to move or rename files and directories.
+If the target is a directory, the source is moved inside it. If the target is a file name, it effectively renames the source.
+
+
+🔹 Options:
+
+* source target : Moves or renames a file or folder.
+Example: mv file.txt newfile.txt (renames the file)
+Example: mv file.txt backup/ (moves the file to backup folder)
+
+* -i : Prompts before overwriting an existing file.
+Example: mv -i index.html backup/
+
+* -f : Forces the move by overwriting files without prompting.
+Example: mv -f data.csv archive/
+
+* -n : Prevents overwriting an existing file.
+Example: mv -n style.css assets/
+
+* -v : Verbose — displays the move/rename process.
+Example: mv -v img.png images/
+
+
+🔹 Example:
+
+mv oldname.txt newname.txt           # Rename a file
+mv script.js js/                     # Move file into a directory
+mv -i index.html backup/             # Prompt before overwriting in backup/
+mv -v a.txt b.txt files/             # Move files with output messages
+mv folderA folderB/                  # Move or rename a directory
+
+
+🔹 Syntax:
+
+mv [options] source target
+
+Common usage includes:
+mv filename newname
+mv file folder/
+mv -i file target/
