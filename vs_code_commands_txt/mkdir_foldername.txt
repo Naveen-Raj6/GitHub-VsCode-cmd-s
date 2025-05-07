@@ -1,0 +1,46 @@
+
+
+🔹 Terminal Command:
+mkdir foldername
+
+
+🔹 Description:
+The mkdir (make directory) command is used to create one or more new directories (folders).
+By default, it creates the directory in the current path.
+If the directory already exists and you try to create it again without -p, it will return an error.
+
+
+🔹 Options:
+
+* foldername : Creates a single folder.
+Example: mkdir assets
+
+* folder1 folder2 : Creates multiple folders at once.
+Example: mkdir js css img
+
+* -p : Creates parent directories as needed, and doesn’t throw an error if they already exist.
+Example: mkdir -p src/components/header
+
+* -v : Verbose mode – displays a message for each created directory.
+Example: mkdir -v newFolder
+
+* --mode=MODE : Sets file permissions (on Linux/macOS).
+Example: mkdir --mode=755 myfolder
+
+
+🔹 Example:
+
+mkdir scripts                     # Create a single folder named "scripts"
+mkdir html css js                 # Create multiple folders
+mkdir -p src/pages/home           # Create nested directories
+mkdir -v logs                     # Show confirmation message
+
+
+🔹 Syntax:
+
+mkdir [options] directory_name
+
+Common usage includes:
+mkdir foldername
+mkdir -p path/to/folder
+mkdir folder1 folder2
