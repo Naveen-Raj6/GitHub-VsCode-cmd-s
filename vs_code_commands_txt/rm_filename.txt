@@ -1,0 +1,54 @@
+
+
+🔹 Terminal Command:
+rm filename
+
+
+🔹 Description:
+The rm (remove) command is used to delete files or directories from the filesystem.
+Unlike rmdir, rm can delete both files and folders, but deletion is permanent (doesn’t move to trash/recycle bin).
+Use with caution, especially with -r and -f options.
+
+
+🔹 Options:
+
+* filename : Deletes a specific file.
+Example: rm data.txt
+
+* file1 file2 : Deletes multiple files at once.
+Example: rm a.txt b.txt
+
+* -r or --recursive : Deletes directories and their contents recursively.
+Example: rm -r myFolder
+
+* -f or --force : Ignores nonexistent files and doesn't prompt for confirmation.
+Example: rm -f temp.txt
+
+* -rf or -r -f : Forcefully delete folders and contents without confirmation.
+Example: rm -rf node_modules
+
+* -i : Prompts before every removal.
+Example: rm -i file.txt
+
+* -v : Verbose mode — shows what is being deleted.
+Example: rm -v *.log
+
+
+🔹 Example:
+
+rm index.html                  # Delete a file named index.html
+rm -i data.csv                 # Ask for confirmation before deleting
+rm -r dist                     # Delete a folder named dist recursively
+rm -rf build                   # Force delete folder and contents
+rm -v a.js b.js                # Delete files and show what is being deleted
+
+
+🔹 Syntax:
+
+rm [options] filename
+rm [options] directory_name
+
+Common usage includes:
+rm file.txt
+rm -r folder/
+rm -rf folder/
