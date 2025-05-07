@@ -1,0 +1,47 @@
+
+
+🔹 Terminal Command:
+touch filename
+
+
+🔹 Description:
+The touch command is used to create a new empty file.
+If the specified file already exists, it updates its last modified timestamp without changing its content.
+It's a quick way to create placeholder files like index.html, script.js, or README.md.
+
+
+🔹 Options:
+
+* filename : Creates a single file.
+Example: touch notes.txt
+
+* file1 file2 ... : Creates multiple files at once.
+Example: touch a.js b.js c.js
+
+* -c or --no-create : Do not create the file if it doesn't exist (only updates timestamps).
+Example: touch -c config.json
+
+* -t [[CC]YY]MMDDhhmm[.ss] : Set a custom timestamp.
+Example: touch -t 202505071230 file.txt (sets to May 7, 2025, 12:30 PM)
+
+* -a : Change only the access time.
+
+* -m : Change only the modification time.
+
+
+🔹 Example:
+
+* touch index.html                  # Create index.html
+* touch style.css script.js         # Create multiple files
+* touch -c README.md                # Only update timestamp if it exists
+* touch -t 202501011200 log.txt     # Set a specific date/time
+
+
+🔹 Syntax:
+
+touch [options] filename
+
+Common usage includes:
+touch file.txt
+touch file1 file2
+touch -c existing_file
