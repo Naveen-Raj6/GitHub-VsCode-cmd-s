@@ -1,0 +1,38 @@
+
+
+🔹 Terminal Command:
+rm -r foldername
+
+
+🔹 Description:
+The rm -r command is used to recursively delete a folder and all of its contents, including files and subfolders.
+This is a powerful command that should be used with caution, as it permanently deletes everything in the specified directory.
+
+
+🔹 Options:
+
+* -r or --recursive : Recursively deletes directories and their contents.
+Example: rm -r project/
+
+* -f or --force : Skips prompts, ignores errors for non-existent files or directories.
+Example: rm -rf backup/
+
+* -v or --verbose : Shows each file or directory being removed.
+Example: rm -rv old_folder/
+
+
+🔹 Example:
+
+rm -r logs                    # Recursively delete the 'logs' folder and everything inside it
+rm -rf node_modules           # Force delete 'node_modules' without prompts
+rm -rv dist                   # Verbosely delete 'dist' and show progress
+
+
+🔹 Syntax:
+
+rm -r [options] foldername
+
+Common usage includes:
+rm -r foldername/
+rm -rf foldername/
+rm -rv foldername/
