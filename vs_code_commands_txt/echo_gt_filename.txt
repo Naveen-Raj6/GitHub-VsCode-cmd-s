@@ -1,0 +1,49 @@
+
+
+🔹 Terminal Command:
+echo > filename
+
+
+🔹 Description:
+The echo command outputs the given string to the terminal.
+When used with > or >>, it redirects the output to a file:
+
+* > creates or overwrites the file with the given content.
+* >> appends the content to the file without removing existing content.
+
+If no text is provided, echo > filename creates a blank file or clears the file content if it exists.
+
+
+🔹 Options:
+
+* echo "text" : Print text to the terminal.
+Example: echo "Hello World"
+
+* echo "text" > file.txt : Write (overwrite) text to file.
+Example: echo "Welcome" > greeting.txt
+
+* echo "text" >> file.txt : Append text to file.
+Example: echo "Line 2" >> greeting.txt
+
+* echo > filename : Create a blank file or clear an existing file.
+Example: echo > clear.txt
+
+* -n : Do not print the trailing newline.
+Example: echo -n "Same line"
+
+* -e : Enable interpretation of backslash escapes (like \n, \t).
+Example: echo -e "Line1\nLine2"
+
+
+🔹 Example:
+
+echo "Hello World" > hello.txt       # Create/overwrite file with text
+echo "Another Line" >> hello.txt     # Append line to file
+echo > empty.txt                     # Create empty file or clear contents
+echo -e "Line1\nLine2" > multiline.txt  # Multiple lines in file
+
+
+🔹 Syntax:
+
+echo [options] [text] > filename
+echo [options] [text] >> filename
