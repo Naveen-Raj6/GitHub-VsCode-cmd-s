@@ -1,0 +1,39 @@
+
+
+🔹 Terminal Command:
+rmdir foldername
+
+
+🔹 Description:
+The rmdir (remove directory) command is used to delete empty directories only.
+If the specified directory contains any files or subdirectories, rmdir will return an error unless those are removed first.
+It’s safer than rm -r because it prevents accidental deletion of non-empty folders.
+
+
+🔹 Options:
+
+* foldername : Deletes an empty directory.
+Example: rmdir temp
+
+* --ignore-fail-on-non-empty : Prevents errors if the directory is not empty (still won’t delete it).
+Example: rmdir --ignore-fail-on-non-empty test
+
+* -p : Removes the specified directory and its parent directories if they are also empty.
+Example: rmdir -p a/b/c (removes c, b, and a if all are empty)
+
+
+🔹 Example:
+
+rmdir old_logs                                  # Delete an empty folder named old_logs
+rmdir -p test1/test2/test3                      # Remove test3 and its empty parents test2 and test1
+rmdir --ignore-fail-on-non-empty tempFolder     # Ignore error if not empty
+
+
+🔹 Syntax:
+
+rmdir [options] directory_name
+
+Common usage includes:
+rmdir foldername
+rmdir -p nested/empty/folders
+
